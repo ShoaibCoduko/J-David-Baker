@@ -17,8 +17,36 @@
 </head><link rel="stylesheet" href="stylecss/style.css">
 
 <body>
-    <a class="btn_toggle rounded " href="#"><i class="fas fa-bars"></i></a>
-    <!-- <nav id="sidebar-wrapper" class="">
+    <a class="btn_toggle rounded "
+    data-bs-toggle="offcanvas"
+    href="#sidebar-wrapper"
+    role="button"
+    aria-controls="sidebar-wrapper" href="#"><i class="fas fa-bars"></i></a>
+    <div class="offcanvas offcanvas-end bg_liblue" id="sidebar-wrapper" aria-labelledby="rightsidelabe">
+    <div class="offcanvas-header bg-info">
+      <h5 class="offcanvas-title" id="rightsidelabe">J David Baker</h5>
+      <button
+        type="button"
+        class="btn-close btn_toggle_close rounded"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      >X</button>
+    </div>
+    <div class="d-block">
+      <ul class="d-inline">
+        <li class="btn d-block text-start info-hover py-2 px-3">
+          <a class="" href="#homese">Home</a>
+        </li>
+        <li class="btn d-block text-start info-hover py-2 px-3">
+          <a class="" href="#aboutse">About</a>
+        </li>
+        <li class="btn d-block text-start info-hover py-2 px-3">
+          <a class="" href="#contectse">Contect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <!-- <nav id="sidebar-wrapper" class="" id="offcanvasExample">
         <ul class="sidebar-nav">
             <li class="sidebar-brand"><a href="#">J David Baker</a></li>
             <li class="sidebar-nav-item"><a href="#">Home</a></li>
@@ -29,18 +57,18 @@
         </ul>
     </nav> -->
     <main>
-        <div class="bg_image" style="background-image: url('image/bg_image.png');">
+        <div class="bg_image" id="homese" style="background-image: url('image/bg_image.png');">
             <h1 class="fw-bolder display-2 text-center p-0 m-0 text-capitalize">J David Baker</h1>
             <p class="text-center fs-3 p-0 m-0 text-capitalize"><i class="p-0 m-0"><b>Web Application Developer | Full Stack Engineer</b></i></p>
 
         </div>
-        <div class="bg-light py-5">
+        <div class="bg-light py-5" id="aboutse">
             <div class="my-lg-5 p-5 text-center">
                 <h2 class="fw-bold text-capitalize">Over 16 years of experience building complex, custom web applications </h2>
                 <p class="fs-5 text-gary text-capitalize">Laravel Expert. Certified AWS Solutions Architect. Linux SysAdmin. MySQL DBA. DevOps Extraordinaire.</p>
             </div>
         </div>
-        <div class="bg-info py-5">
+        <div class="bg-info py-5" id="contectse">
             <div class="py-5 my-lg-5 text-center">
                 <h2 class="fw-bold text-capitalize m-0 p-0">Email Me</h2>
                 <h2 class="m-0 p-0"><a class="d-inline nav-link active fw-bold text-gary text-decoration-underline text-capitalize m-0 p-0" href="#">contact@jdavidbaker.com</a></h2>
