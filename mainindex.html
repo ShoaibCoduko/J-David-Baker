@@ -62,21 +62,30 @@
       </div>
       <!-- extension/package.json not found inside zip. -->
     </div>
+    
+   
   </main>
   <script>
+    //button click
+
     function openNav() {
-      var openside = document.getElementById("mySidebar");
-      var btnchags = document.getElementById("btnclose");
-      if (openside.style.display === "none") {
-        openside.style.width = "250px"
-        btnchags.innerHTML = "X";
-        openside.style.display = "block";
-
-      } else {
-        openside.style.display = "none";
-
-      }
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("btnclose").style.display = "none";
     }
+    // function openNav() {
+    //   var openside = document.getElementById("mySidebar");
+    //   var btnchags = document.getElementById("btnclose");
+    //   if (openside.style.display === "none") {
+    //     openside.style.width = "250px"
+    //     btnchags.innerHTML = "X";
+    //     openside.style.display = "block";
+
+    //   } else {
+    //     openside.style.display = "none";
+
+    //   }
+    // }
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
